@@ -53,10 +53,10 @@ $(document).ready(function(){
       var duration = $duration.innerText;
       var cost = $cost.innerText;
 
-      if(age === "Minimum Age:"){age = false;} else { age = parseInt(age.substring(1));}
-      if(county ==="County:"){ county = false;}
-      if(duration ==="Time Length:"){duration = false;} else { duration = parseInt(duration.substring(1).split(" ")[0]);}
-      if(cost === "Cost:"){cost = false;} else { cost = parseInt(cost.substring(1));}
+      if(age === "Any"){age = false;} else { age = parseInt(age);}
+      if(county ==="Any"){ county = false;}
+      if(duration ==="Any"){duration = false;} else { duration = parseInt(duration.split(" ")[0]);}
+      if(cost === "Any"){cost = false;} else { cost = parseInt(cost.substring(1));}
 
 
         var options = {

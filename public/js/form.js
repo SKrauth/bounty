@@ -1,15 +1,10 @@
 $(document).ready(function(){
-<<<<<<< HEAD
-    
+
+
 //Using .submit to handle the form and link the submit button to an action.
     $( "#programForm" ).submit(function( event ){
-        
-=======
-//Using .submit to handle the form and link the submit button to an action.
-    $( "#programForm" ).submit(function( event ){
-//This will stop the submit funtion from refreshing page, possibly for missing form pieces.
-        event.preventDefault();
->>>>>>> 15fa327f8b9e40ea544cedb6234545c255b1e13f
+
+
 //building object from form.html's inputs
         var formObject = {};
         formObject.programName = $( "#programName" ).val();
@@ -47,17 +42,15 @@ $(document).ready(function(){
         $.post("/api/programs", formObject, function(){
         })
             .done(function(){
-<<<<<<< HEAD
+
                 formObject = {};
-=======
->>>>>>> 15fa327f8b9e40ea544cedb6234545c255b1e13f
+
             })
             .fail(function(){
-<<<<<<< HEAD
+
 //This will stop the submit funtion from refreshing page, possibly for missing form pieces.
                 event.preventDefault();
-=======
->>>>>>> 15fa327f8b9e40ea544cedb6234545c255b1e13f
+
             });
 
     });
